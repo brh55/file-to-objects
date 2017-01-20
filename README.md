@@ -8,7 +8,7 @@
 `$ npm install --save file-line-parse` *OR* `$ yarn add file-line-parse`
 
 ## Usage
-'''javascript
+```javascript
 // CATS_DATA.csv:
 // Bubbles,Persian,24,honey-brown
 // Garfield,Tabby,33,orange with stripes
@@ -23,7 +23,7 @@ fileLineParse(input, keys)
     console.log(cats[1])
     // { name: 'Garfield', breed: 'Tabby', age: '34', color: 'orange with stripes' }
 });
-'''
+```
 
 ## API
 ### fileLineParse(input, keys, [options])
