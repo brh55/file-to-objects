@@ -4,7 +4,7 @@
   "description": "Parse a propery delimited file, line-by-line, and return a Javascript array with object representations",
   "main": "test.js",
   "scripts": {
-    "test": "test"
+    "test": "ava -v"
   },
   "engines": {
     "node": ">=4"
