@@ -1,0 +1,43 @@
+{
+  "name": "file-line-parse",
+  "version": "1.0.0",
+  "description": "Parse a propery delimited file, line-by-line, and return a Javascript array with object representations",
+  "main": "test.js",
+  "scripts": {
+    "test": "test"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brh55/file-line-parser.git"
+  },
+  "keywords": [
+    "file",
+    "line",
+    "parser",
+    "csv",
+    "txt"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "author": "Brandon Him",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brh55/file-line-parser/issues"
+  },
+  "homepage": "https://github.com/brh55/file-line-parser#readme",
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  },
+  "xo": {
+    "esnext": true
+  },
+  "dependencies": {
+    "end-of-stream": "^1.1.0",
+    "stream-to-promise": "^2.2.0"
+  }
+}
