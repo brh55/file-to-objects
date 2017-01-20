@@ -1,8 +1,7 @@
 {
   "name": "file-line-parse",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Parse a propery delimited file, line-by-line, and return a Javascript array with object representations",
-  "main": "test.js",
   "scripts": {
     "test": "ava -v"
   },
