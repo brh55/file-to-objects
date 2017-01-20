@@ -1,11 +1,12 @@
-# file-line-parse [![Travis](https://img.shields.io/travis/brh55/file-line-parse.svg?style=flat-square)]() [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square)](https://github.com/sindresorhus/xo)
+# file-line-parse [![Travis](https://img.shields.io/travis/brh55/file-line-parse.svg?style=flat-square)](https://travis-ci.org/brh55/file-line-parse) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square)](https://github.com/sindresorhus/xo)
 
 > Parse a property delimited file, line-by-line, and return the line in a JavaScript array in object representation.
-> fileLineParse(📄) => [ {}, {}, {} ]
+> 
+> **fileLineParse(📄) => [ {}, {}, {} ]**
 
 ## Install
 
-`$ npm install --save file-line-parse` *OR* `$ yarn add file-line-parse`
+`$ npm install --save file-line-parse` **OR** `$ yarn add file-line-parse`
 
 ## Usage
 ```javascript
@@ -37,7 +38,7 @@ An array of keys for object to map to
 
 #### options
 ##### options.delimiter
-Specify the delimiter to be used. `Default: ,`
+Specify the delimiter to be used. `Default: ","`
 
 ## License
 MIT
