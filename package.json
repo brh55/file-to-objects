@@ -35,9 +35,5 @@
   },
   "xo": {
     "esnext": true
-  },
-  "dependencies": {
-    "end-of-stream": "^1.1.0",
-    "stream-to-promise": "^2.2.0"
   }
 }
