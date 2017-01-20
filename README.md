@@ -22,7 +22,7 @@ fileLineParse(input, keys)
     // { name: 'Bubbles', breed: 'Persian', age: '24', color: 'honey-brown' }
 
     console.log(cats[1])
-    // { name: 'Garfield', breed: 'Tabby', age: '34', color: 'orange with stripes' }
+    // { name: 'Garfield', breed: 'Tabby', age: '33', color: 'orange with stripes' }
 });
 ```
 
