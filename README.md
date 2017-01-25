@@ -30,15 +30,18 @@ fileLineParse(input, keys)
 ### fileLineParse(input, keys, [options])
 Return a `set` of parsed objects dictacted by sequence of keys
 
-#### input
-Path to file to be input
+#### input | [`<string>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
+Path to file to be input.
 
-#### keys
-An array of keys for object to map to
+#### keys | [`<array>[<string> | <int>]`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Indexed_collections_Arrays_and_typed_Arrays)
+An array of keys to serve as mapping for object creation.
 
-#### options
-##### options.delimiter
+#### options | [`<object>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Normal_objects_and_functions)
+##### options.delimiter | [`<string>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 Specify the delimiter to be used. `Default: ","`
+
+## Related
+:arrows_counterclockwise: [objects-to-file](https://github.com/brh55/objects-to-file) - Create a delimited value, output file from an array of objects.
 
 ## License
 MIT
