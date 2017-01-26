@@ -1,5 +1,5 @@
 {
-  "name": "file-line-parse",
+  "name": "file-to-objects",
   "version": "1.0.4",
   "description": "Parse a propery delimited file, line-by-line, and return a Javascript array with object representations",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brh55/file-line-parser.git"
+    "url": "git+https://github.com/brh55/file-to-objects.git"
   },
   "keywords": [
     "file",
@@ -25,9 +25,9 @@
   "author": "Brandon Him",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/brh55/file-line-parser/issues"
+    "url": "https://github.com/brh55/file-to-objects/issues"
   },
-  "homepage": "https://github.com/brh55/file-line-parser#readme",
+  "homepage": "https://github.com/brh55/file-to-objects#readme",
   "devDependencies": {
     "ava": "*",
     "xo": "*"

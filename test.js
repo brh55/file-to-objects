@@ -1,9 +1,9 @@
 import path from 'path';
 import test from 'ava';
-import fileLineParse from './index.js';
+import fileToObjects from './index.js';
 
 test('Test object creation', async t => {
-	const input = path.join(__dirname, 'fixture', 'fixture.csv');
+	const input = path.join(__dirname, 'fixture', 'bmp.csv');
 	const keys = [
 		'action',
 		'sequence',
@@ -18,7 +18,7 @@ test('Test object creation', async t => {
 		'bgpId'
 	];
 
-	const firstObject = {
+	const secondObject = {
 		action: 'init',
 		sequence: '73bc17f6-ad2c-4950-b88c-6c2998c8edd1',
 		name: 'LEAF-72000-72002',
@@ -32,12 +32,23 @@ test('Test object creation', async t => {
 		bgpId: '12.1.1.2'
 	};
 
-	const objectStore = await fileLineParse(input, keys);
+	const objectStore = await fileToObjects(input, { keys });
+
 	t.is(objectStore.length, 500, 'Store is equal to number of lines in input');
-	t.deepEqual(objectStore[1], firstObject, 'Object is parsed correctly');
+	t.deepEqual(objectStore[1], secondObject, 'Object is parsed correctly');
 });
 
 test('Test reject', async t => {
-	const error = await t.throws(fileLineParse());
-	t.is(error.message, 'All required arguments are not defined');
+	const error = await t.throws(fileToObjects());
+
+	t.is(error.message, 'assert input is a file path string');
+});
+
+test('Test header dervied keys', async t => {
+	const input = path.join(__dirname, 'fixture', 'cats.csv');
+	const objectStore = await fileToObjects(input);
+
+	t.is(objectStore.length, 4,'Length is one less than file lines because of header');
+	t.deepEqual(objectStore[0], { age: '20', name: 'gerald', breed: 'ragdoll' }, 'Parsed correctly');
+	t.deepEqual(objectStore[3], { age: '21', name: 'mew', breed: 'ocicat' }, 'Parsed correctly');
 });
