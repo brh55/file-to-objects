@@ -35,7 +35,7 @@ Path to file to be input.
 
 #### options | [`<object>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Normal_objects_and_functions)
 
-#### options.keys | [`<array>[<string> | <int>]`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Indexed_collections_Arrays_and_typed_Arrays)
+##### options.keys | [`<array>[<string> | <int>]`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Indexed_collections_Arrays_and_typed_Arrays)
 An array of keys to serve as a mapping for objects, this will override any column header to serve as a mapping for object creation.
 
 ##### options.delimiter | [`<string>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
