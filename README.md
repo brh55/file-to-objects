@@ -11,12 +11,12 @@
 ## Usage
 ```javascript
 // CATS_DATA.csv:
+// name,breed,age,color
 // Bubbles,Persian,24,honey-brown
 // Garfield,Tabby,33,orange with stripes
 const fileToObjects = require('file-line-parse');
 const input = './data/CATS_DATA.csv';
-const keys = [ 'name', 'breed', 'age', 'color'];
-fileToObjects(input, { keys: keys })
+fileToObjects(input)
     .then(cats => {
         console.log(cats[0])
         // { name: 'Bubbles', breed: 'Persian', age: '24', color: 'honey-brown' }
