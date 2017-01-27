@@ -14,7 +14,7 @@
 // name,breed,age,color
 // Bubbles,Persian,24,honey-brown
 // Garfield,Tabby,33,orange with stripes
-const fileToObjects = require('file-line-parse');
+const fileToObjects = require('file-to-objects');
 const input = './data/CATS_DATA.csv';
 fileToObjects(input)
     .then(cats => {
