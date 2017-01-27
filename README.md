@@ -27,7 +27,7 @@ fileToObjects(input)
 ```
 
 ## API
-### fileToObjects(input, [options])
+### fileToObjects(input[, options])
 Return a `set` of parsed objects dictacted by sequence of keys
 
 #### input | [`<string>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
